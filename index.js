@@ -3,7 +3,7 @@ const category = document.querySelector(".category");
 const categorySpan = document.querySelectorAll(".category span");
 
 const baseUrl = "https://newsapi.org/v2";
-const apiKey = "&apiKey=fc1cf2e81bcd4e73a634491a90d68244";
+const apiKey = "&apiKey=ccd9e1b211374ae385e90428c1ea8e1b";
 
 const backupImage = "https://images.unsplash.com/photo-1495020689067-958852a7765e?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169";
 
@@ -22,7 +22,7 @@ function urlRequest(url){
         data.articles.forEach(item => {
             cards.innerHTML += `<div class="card">
                                     <div class="image">
-                                        <img src="${item.urlToImage ? item.urlToImage : backupImage}" alt="Default News Image">
+                                        <img src="${ item.urlToImage ? item.urlToImage : backupImage }" alt="Default News Image">
                                     </div>
                                     <div class="information">
                                         <div>
